@@ -24,10 +24,10 @@ class Song
   end
   
   def artist_name= (name_of_artist)
-    # Artist.find_or_create_by_name(name_of_artist)
+    Artist.find_or_create_by_name(name_of_artist)
     
     
-    Artist.all.find {|artist| artist == name_of_artist} ? name_of_artist : self.artist = name_of_artist
+  
   end
 end
 
